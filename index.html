@@ -1,63 +1,308 @@
 <!DOCTYPE html>
 <html lang="vi">
+
 <head>
 <meta charset="UTF-8">
-<title>Học Sinh Yên Định 2 Sáng Tạo</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Học Sinh Yên Định 2 Sáng Tạo 2026</title>
 
 <style>
+
 body{
-    font-family: Arial;
-    background:#fffcef;
-    color: #5c899d;
-    text-align:center;
+    margin:0;
+    font-family: Arial, Helvetica, sans-serif;
+    background:#f4f6f8;
 }
 
-header{
+/* MENU */
+
+header{ /* thanh trên cùng*/
     background:#5c899d;
-    color:white;
-    padding:20px;
+    color:#fffcef;
+    padding:15px 50px;
 }
+
+nav{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+
+nav ul{
+    list-style:none;
+    display:flex;
+    gap:25px;
+}
+
+nav ul li a{
+    color:fffcef;
+    text-decoration:none;
+    font-weight:bold;
+}
+
+/* HERO */
+
+.hero{
+    background:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),
+    url("https://github.com/Iz-HaruVN/hoc-sinh-yen-dinh-2/blob/main/assets/banner.jpg?raw=true") center/cover no-repeat;
+    background-size: 100% 100%;
+    color:white;
+    text-align:center;
+    padding:120px 20px;
+}
+
+.hero h1{
+    font-size:48px;
+}
+
+.hero p{
+    font-size:20px;
+}
+
+/* SECTION */
 
 section{
-    margin:30px;
+    padding:60px 10%;
+}
+
+.section-title{
+    color: #0a4da2;
+    text-align:center;
+    font-size:32px;
+    margin-bottom:40px;
+}
+
+/* CARDS */
+
+.grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:25px;
 }
 
 .card{
-    background:white;
-    padding:20px;
-    margin:10px;
+    background:#fffcef;
+    color: #000;
+    padding:25px;
     border-radius:10px;
-    border: 2px solid #5c899d;
+    box-shadow:0 5px 10px rgba(0,0,0,0.1);
 }
-</style>
 
+/* FOOTER */
+
+footer{
+    background:#0a4da2;
+    color:#fffcef;
+    text-align:center;
+    padding:20px;
+}
+
+</style>
 </head>
+
 
 <body>
 
 <header>
-<h1>HỌC SINH YÊN ĐỊNH 2 SÁNG TẠO 2026</h1>
-<p>Chào mừng ngày thành lập Đoàn 26/3</p>
+
+<nav>
+
+<h2>Yên Định 2 Creative</h2>
+
+<ul>
+<li><a href="#home" style="color: #0a4da2;">Trang chủ</a></li>
+<li><a href="#about" style="color: #0a4da2;">Giới thiệu</a></li>
+<li><a href="#activities" style="color: #0a4da2;">Hoạt động</a></li>
+<li><a href="#projects" style="color: #0a4da2;">Sáng tạo</a></li>
+<li><a href="#contact" style="color: #0a4da2;">Liên hệ</a></li>
+</ul>
+
+</nav>
+
 </header>
 
-<section>
+
+<!-- HERO -->
+
+<section class="hero" id="home">
+    
+<h1>HỌC SINH YÊN ĐỊNH 2 SÁNG TẠO 2026</h1>
+
+<p>
+Chào mừng kỷ niệm ngày thành lập Đoàn TNCS Hồ Chí Minh 26/3.
+Phong trào khuyến khích học sinh sáng tạo, nghiên cứu và ứng dụng công nghệ.
+</p>
+
+</section>
+
+
+<!-- GIỚI THIỆU -->
+
+<section id="about">
+
+<h2 class="section-title">Giới thiệu cuộc thi</h2>
+
+<div class="grid">
 
 <div class="card">
-<h2>Giới thiệu</h2>
-<p>Trang web tuyên truyền về Đoàn TNCS Hồ Chí Minh và các hoạt động của trường.</p>
+
+<h3>Mục đích</h3>
+
+<p>
+Khuyến khích học sinh trường THPT Yên Định 2 sáng tạo trong học tập,
+ứng dụng công nghệ và phát triển kỹ năng số.
+</p>
+
 </div>
 
 <div class="card">
-<h2>Hoạt động Đoàn</h2>
-<p>Giới thiệu các phong trào thanh niên.</p>
+
+<h3>Ý nghĩa</h3>
+
+<p>
+Tạo sân chơi học thuật, phát huy tư duy sáng tạo,
+đồng thời chào mừng ngày thành lập Đoàn TNCS Hồ Chí Minh.
+</p>
+
 </div>
 
 <div class="card">
-<h2>Liên hệ</h2>
-<p>Email: doantruong@example.com</p>
+
+<h3>Đối tượng</h3>
+
+<p>
+Tất cả học sinh trường THPT Yên Định 2 có thể tham gia
+bằng các sản phẩm sáng tạo như website, video, poster, hoặc phần mềm.
+</p>
+
+</div>
+
 </div>
 
 </section>
+
+
+<!-- HOẠT ĐỘNG -->
+
+<section id="activities">
+
+<h2 class="section-title">Hoạt động Đoàn</h2>
+
+<div class="grid">
+
+<div class="card">
+
+<h3>Thanh niên tình nguyện</h3>
+
+<p>
+Các hoạt động vì cộng đồng, hỗ trợ xã hội và xây dựng môi trường học đường tích cực.
+</p>
+
+</div>
+
+<div class="card">
+
+<h3>Phong trào học tập</h3>
+
+<p>
+Khuyến khích học sinh nghiên cứu khoa học,
+tham gia các cuộc thi sáng tạo và công nghệ.
+</p>
+
+</div>
+
+<div class="card">
+
+<h3>Hoạt động văn hóa</h3>
+
+<p>
+Các chương trình văn nghệ, thể thao và sinh hoạt đoàn viên.
+</p>
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- SẢN PHẨM SÁNG TẠO -->
+
+<section id="projects">
+
+<h2 class="section-title">Sản phẩm sáng tạo</h2>
+
+<div class="grid">
+
+<div class="card">
+
+<h3>Website học tập</h3>
+
+<p>
+Trang web hỗ trợ học sinh tìm kiếm tài liệu, chia sẻ kiến thức
+và nâng cao hiệu quả học tập.
+</p>
+
+</div>
+
+<div class="card">
+
+<h3>Ứng dụng công nghệ</h3>
+
+<p>
+Các sản phẩm ứng dụng công nghệ như phần mềm,
+AI hỗ trợ học sinh và chatbot học tập.
+</p>
+
+</div>
+
+<div class="card">
+
+<h3>Thiết kế truyền thông</h3>
+
+<p>
+Poster, infographic và video tuyên truyền về Đoàn,
+trường học và các hoạt động thanh niên.
+</p>
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- LIÊN HỆ -->
+
+<section id="contact">
+
+<h2 class="section-title">Liên hệ</h2>
+
+<div class="card">
+
+<p>
+
+Đoàn TNCS Hồ Chí Minh<br>
+Trường THPT Yên Định 2<br>
+Thanh Hóa, Việt Nam
+
+</p>
+
+<p>Email: doantruong@example.com</p>
+
+</div>
+
+</section>
+
+
+<footer>
+
+<p>
+© 2026 - A2 k52 - Học Sinh Yên Định 2 Sáng Tạo
+</p>
+
+</footer>
 
 </body>
 </html>
