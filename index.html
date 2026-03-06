@@ -10,128 +10,180 @@
 <style>
 
 body{
-    margin:0;
-    font-family: Arial, Helvetica, sans-serif;
-    background:#f4f6f8;
+margin:0;
+font-family:Arial, Helvetica, sans-serif;
+background:#f4f6f8;
 }
 
 /* MENU */
 
-header{ /* thanh trên cùng*/
-    background:#5c899d;
-    color:#fffcef;
-    padding:15px 50px;
+header{
+background:#d73030;
+color: yellow;
+padding:15px 50px;
 }
 
 nav{
-    display:flex;
-    justify-content:space-between;
-    align-items:center;
+display:flex;
+justify-content:space-between;
+align-items:center;
 }
 
 nav ul{
-    list-style:none;
-    display:flex;
-    gap:25px;
+list-style:none;
+display:flex;
+gap:25px;
 }
 
 nav ul li a{
-    color:fffcef;
-    text-decoration:none;
-    font-weight:bold;
+color:#fffcef;
+text-decoration:none;
+font-weight:bold;
 }
 
 /* HERO */
 
 .hero{
-    background:
-    linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),
-    url("https://github.com/Iz-HaruVN/hoc-sinh-yen-dinh-2/blob/main/assets/banner.jpg?raw=true");
 
-    background-position:center;
-    background-size:cover;
-    background-repeat:no-repeat;
+display:grid;
+grid-template-columns:1fr 220px;
 
-    color:white;
-    text-align:center;
-    padding:120px 20px;
+background:
+linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),
+url("https://github.com/Iz-HaruVN/hoc-sinh-yen-dinh-2/blob/main/assets/banner.jpg?raw=true");
+
+background-position:center;
+background-size:cover;
+background-repeat:no-repeat;
+
+color:white;
+padding:120px 20px;
+
+align-items:center;
+
+}
+
+.hero-main{
+padding-right:40px;
+text-align:center;
 }
 
 .hero h1{
-    font-size:48px;
+font-size:48px;
 }
 
 .hero p{
-    font-size:20px;
+font-size:20px;
 }
 
-/* SECTION */
+.hero-side{
+background-image:url("https://github.com/Iz-HaruVN/hoc-sinh-yen-dinh-2/blob/main/assets/banner2.png?raw=true");
+background-size:cover;
+background-position:center;
+min-height:300px;
+border-radius:10px;
+}
 
-section{
-    padding:60px 10%;
+/* MAIN LAYOUT */
+
+.main-layout{
+
+display:grid;
+grid-template-columns: 1fr 280px;
+gap:40px;
+
+padding:40px 10%;
+
+}
+
+/* CONTENT */
+
+.content section{
+padding-bottom:60px;
 }
 
 .section-title{
-    color: #0a4da2;
-    text-align:center;
-    font-size:32px;
-    margin-bottom:40px;
+color:#0a4da2;
+text-align:center;
+font-size:32px;
+margin-bottom:40px;
 }
 
 /* CARDS */
 
 .grid{
-    display:grid;
-    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
-    gap:25px;
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:25px;
 }
 
 .card{
-    background:#fffcef;
-    color: #000;
-    padding:25px;
-    border-radius:10px;
-    box-shadow:0 5px 10px rgba(0,0,0,0.1);
+background:#fffcef;
+text-align: center;
+color:#000;
+padding:25px;
+border-radius:10px;
+box-shadow:0 5px 10px rgba(0,0,0,0.1);
 }
+
+/* BANNER 3 */
+
+.side-banner{
+
+position:sticky;
+top:50px;
+height:fit-content;
+margin-right: 0px;
+width: 250px;
+}
+
+.side-banner img{
+
+width: 100%;
+border-radius:10px;
+box-shadow:0 5px 15px rgba(0,0,0,0.2);
+
+}
+
+
 
 /* FOOTER */
 
 footer{
-    background:#0a4da2;
-    color:#fffcef;
-    text-align:center;
-    padding:20px;
+background:#5c899d;
+color:#fffcef;
+text-align:center;
+padding:30px;
 }
 
 </style>
 </head>
 
-
 <body>
 
 <header>
-
 <nav>
 
 <h2>Yên Định 2 Creative</h2>
 
 <ul>
-<li><a href="#home" style="color: #0a4da2;">Trang chủ</a></li>
-<li><a href="#about" style="color: #0a4da2;">Giới thiệu</a></li>
-<li><a href="#activities" style="color: #0a4da2;">Hoạt động</a></li>
-<li><a href="#projects" style="color: #0a4da2;">Sáng tạo</a></li>
-<li><a href="#contact" style="color: #0a4da2;">Liên hệ</a></li>
+<li><a href="#">Trang chủ</a></li>
+<li><a href="#">blank1</a></li>
+<li><a href="#">blank2</a></li>
+<li><a href="#">blank3</a></li>
+<li><a href="#contact">Liên hệ</a></li>
 </ul>
 
 </nav>
-
 </header>
 
 
 <!-- HERO -->
 
-<section class="hero" id="home">
-    
+<div class="hero">
+
+<div class="hero-main">
+
 <h1>HỌC SINH YÊN ĐỊNH 2 SÁNG TẠO 2026</h1>
 
 <p>
@@ -139,154 +191,53 @@ Chào mừng kỷ niệm ngày thành lập Đoàn TNCS Hồ Chí Minh 26/3.
 Phong trào khuyến khích học sinh sáng tạo, nghiên cứu và ứng dụng công nghệ.
 </p>
 
-</section>
+</div>
 
-
-<!-- GIỚI THIỆU -->
-
-<section id="about">
-
-<h2 class="section-title">Giới thiệu cuộc thi</h2>
-
-<div class="grid">
-
-<div class="card">
-
-<h3>Mục đích</h3>
-
-<p>
-Khuyến khích học sinh trường THPT Yên Định 2 sáng tạo trong học tập,
-ứng dụng công nghệ và phát triển kỹ năng số.
-</p>
+<div class="hero-side"></div>
 
 </div>
 
+
+
+<!-- MAIN CONTENT + BANNER -->
+
+<div class="main-layout">
+
+<div class="content">
+
+<section>
+
+<h2 class="section-title">blank1</h2>
+
 <div class="card">
-
-<h3>Ý nghĩa</h3>
-
-<p>
-Tạo sân chơi học thuật, phát huy tư duy sáng tạo,
-đồng thời chào mừng ngày thành lập Đoàn TNCS Hồ Chí Minh.
-</p>
-
-</div>
-
-<div class="card">
-
-<h3>Đối tượng</h3>
-
-<p>
-Tất cả học sinh trường THPT Yên Định 2 có thể tham gia
-bằng các sản phẩm sáng tạo như website, video, poster, hoặc phần mềm.
-</p>
-
-</div>
-
+<h3>example div</h3>
+<p style="text-align: left;">example paragraph</p>
 </div>
 
 </section>
 
 
-<!-- HOẠT ĐỘNG -->
 
-<section id="activities">
+<section>
 
-<h2 class="section-title">Hoạt động Đoàn</h2>
+<h2 class="section-title">blank2</h2>
 
-<div class="grid">
-
-<div class="card">
-
-<h3>Thanh niên tình nguyện</h3>
-
-<p>
-Các hoạt động vì cộng đồng, hỗ trợ xã hội và xây dựng môi trường học đường tích cực.
-</p>
-
-</div>
-
-<div class="card">
-
-<h3>Phong trào học tập</h3>
-
-<p>
-Khuyến khích học sinh nghiên cứu khoa học,
-tham gia các cuộc thi sáng tạo và công nghệ.
-</p>
-
-</div>
-
-<div class="card">
-
-<h3>Hoạt động văn hóa</h3>
-
-<p>
-Các chương trình văn nghệ, thể thao và sinh hoạt đoàn viên.
-</p>
-
-</div>
-
-</div>
+<p style="text-align:center;color:#999">no content</p>
 
 </section>
 
 
-<!-- SẢN PHẨM SÁNG TẠO -->
+<section>
 
-<section id="projects">
+<h2 class="section-title">blank3</h2>
 
-<h2 class="section-title">Sản phẩm sáng tạo</h2>
-
-<div class="grid">
-
-<div class="card">
-
-<h3>Website học tập</h3>
-
-<p>
-Trang web hỗ trợ học sinh tìm kiếm tài liệu, chia sẻ kiến thức
-và nâng cao hiệu quả học tập.
-</p>
-
-</div>
-
-<div class="card">
-
-<h3>Ứng dụng công nghệ</h3>
-
-<p>
-Các sản phẩm ứng dụng công nghệ như phần mềm,
-AI hỗ trợ học sinh và chatbot học tập.
-</p>
-
-</div>
-
-<div class="card">
-
-<h3>Thiết kế truyền thông</h3>
-
-<p>
-Poster, infographic và video tuyên truyền về Đoàn,
-trường học và các hoạt động thanh niên.
-</p>
-
-</div>
-
-</div>
+<p style="text-align:center;color:#999">no content</p>
 
 </section>
-
-
-<!-- LIÊN HỆ -->
-
-<section id="contact">
-
-<h2 class="section-title">Liên hệ</h2>
-
-<div class="card">
-
-<p>
+<section id="contact"> 
+    <h2 class="section-title">Liên hệ</h2>
+    <div class="card">
+        <p>
 
 Đoàn TNCS Hồ Chí Minh<br>
 Trường THPT Yên Định 2<br>
@@ -294,17 +245,31 @@ Thanh Hóa, Việt Nam
 
 </p>
 
-<p>Email: doantruong@example.com</p>
+<p>Email: none@example.com</p>
+    </div>
+</section>
 
 </div>
 
-</section>
+
+
+<!-- BANNER DỌC -->
+
+<div class="side-banner">
+
+<img src="https://github.com/Iz-HaruVN/hoc-sinh-yen-dinh-2/blob/main/assets/banner3.jpg?raw=true">
+
+</div>
+
+</div>
+
 
 
 <footer>
 
 <p>
-© 2026 - A2 k52 - Học Sinh Yên Định 2 Sáng Tạo
+    © 2026 - Chi đoàn 11A2 <br>
+    all rights reserved.
 </p>
 
 </footer>
