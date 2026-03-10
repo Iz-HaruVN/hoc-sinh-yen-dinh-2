@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Ghi công</title>
+
+<style>
+
+body{
+margin:0;
+font-family:Arial, Helvetica, sans-serif;
+background:#f4f6f8;
+}
+
+/* MENU */
+
+header{
+background:#d73030;
+color: yellow;
+padding:15px 50px;
+}
+
+nav{
+display:flex;
+justify-content:space-between;
+align-items:center;
+}
+
+nav ul{
+list-style:none;
+display:flex;
+gap:25px;
+}
+
+nav ul li a{
+color:#fffcef;
+text-decoration:none;
+font-weight:bold;
+}
+
+/* HERO */
+
+.image-box {
+    position: relative;
+    width: 300px;
+}
+
+.image-box img {
+    width: 100%;
+    display: block;
+}
+
+.text {
+    position: absolute;
+    bottom: 0;
+    background: rgba(0,0,0,0.6);
+    color: white;
+    width: 100%;
+    text-align: center;
+    padding: 10px;
+    opacity: 0;
+    transition: 0.3s;
+}
+
+.image-box:hover .text {
+    opacity: 1;
+}
+
+/* MAIN LAYOUT */
+
+.main-layout{
+
+display:grid;
+grid-template-columns: 1fr 280px;
+gap:40px;
+
+padding:40px 10%;
+
+}
+
+/* CONTENT */
+
+.content section{
+padding-bottom:60px;
+}
+
+.section-title{
+color:#0a4da2;
+text-align:center;
+font-size:32px;
+margin-bottom:40px;
+}
+
+/* CARDS */
+
+.grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:25px;
+}
+
+.card{
+background:#fffcef;
+text-align: center;
+color:#000;
+padding:25px;
+border-radius:10px;
+box-shadow:0 5px 10px rgba(0,0,0,0.1);
+}
+
+/* BANNER 3 */
+
+.side-banner{
+
+position:sticky;
+top: 100px;
+height:fit-content;
+margin-right: 0px;
+width: 250px;
+}
+
+.side-banner img{
+
+width: 100%;
+border-radius:10px;
+box-shadow:0 5px 15px rgba(0,0,0,0.2);
+
+}
+
+
+
+/* FOOTER */
+
+footer{
+background:#5c899d;
+color:#fffcef;
+text-align:center;
+padding:30px;
+}
+
+</style>
+</head>
+
+<body>
+
+<header>
+<nav>
+<h2>11A2 - Tuổi trẻ Việt Nam</h2>
+<ul>
+<li><a href="index.html">Trang chủ</a></li>
+<li><a href="about.html">Về 11A2</a></li>
+<li><a href="#">blank2</a></li>
+<li><a href="credit.html">Ghi công</a></li>
+<li><a href="index.html#contact">Liên hệ</a></li>
+</ul>
+
+</nav>
+</header> 
+
+
+<!-- MAIN CONTENT + BANNER -->
+
+<div>
+
+<div class="content">
+
+<section>
+
+<h2 class="section-title">Lời cảm ơn</h2>
+<p style="color: #000;">
+    Chúng tôi xin gửi lời cảm ơn chân thành đến tất cả những người đã đóng góp vào việc tạo ra trang web này. Sự hỗ trợ và đóng góp của các bạn đã giúp chúng tôi hoàn thành dự án một cách thành công.
+</p>
+<hr><br>
+<div class="card">
+<h3>Ghi công</h3>
+<p style="text-align: left;">
+    Trang web này được thực hiện bởi chi đoàn 11A2.<br>
+    Bởi Lê Xuân Lâm, Lê Văn Hùng, Lê Văn Huy và thầy cô cùng tập thể các bạn học sinh lớp 11A2.
+</p>
+
+</div>
+<div>
+    <p>
+        <h3 style="color:#ff0303;text-align: center;">Disclaimer</h3>
+        <span style="color:#000000">
+            <span>
+        Các tài liệu, hình ảnh, nhạc nền được sử dụng trong trang web này được sưu tầm từ internet<br>
+    </span>
+    <span style="font-style: italic;">Các tài nguyên này chỉ được sử dụng cho mục đích giáo dục và không mang tính thương mại,
+        Chúng tôi cũng không sở hữu những hình ảnh này.
+    </span>
+        </span>
+        
+    </p>
+</div>
+<hr >
+<div>
+    <h4 style="color:#0a4da2;text-align: left;">Nếu có bất kì vấn đề nào với hình ảnh được sử dụng trên trang web, hãy:</h4>
+    <ul style="color:#000000;text-align: left;">
+        <li>Liên hệ với chúng tôi qua email: <a href="mailto:lexuanlam290109@gmail.com">tại đây.</a></li>
+        <li>Tạo 1 issue trên Github: <a href="https://github.com/Iz-HaruVN/hoc-sinh-yen-dinh-2/issues">tại đây.</a></li>
+</div>
+</section>
+
+
+</div>
+
+
+
+<!-- BANNER DỌC -->
+
+</div>
+
+
+
+<footer>
+
+<p>
+    © 2026 - Chi đoàn 11A2 <br>
+    all rights reserved.
+</p>
+
+</footer>
+
+</body>
+</html>
